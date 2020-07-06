@@ -86,7 +86,7 @@ p{
 	margin:0px;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	color:#000;
+	color: #e4eaea;;
 }
 h1{
 	font-family: 'Montserrat', sans-serif;
@@ -99,7 +99,7 @@ h1{
 h2{
 	font-family: 'Montserrat', sans-serif;
 	font-size:29px;
-	color:#372d38;
+	color:#e4eaea;
 	line-height:57px;
 	padding-bottom:10px;
 	font-weight:400;
@@ -159,7 +159,7 @@ h5{
 	display:block;
 	width:76px;
 	height:2px;
-	background:#5b4c5c;
+	background:#0288D1;
 	position:absolute;
 	bottom:0;
 	left:50%;
@@ -168,7 +168,7 @@ h5{
 .heading h3{
 	font-size:18px;
 	line-height:30px;
-	color:#5b4c5c;
+	color:#808183;
 	padding-bottom:0;
 	font-weight:300;
 	text-transform:none;
@@ -427,7 +427,7 @@ header{
 	4. About me Style
 ------------------------------------------------------*/
 .aboutus{
-	background:#ffffff;
+	background:#0b0c0d;
 	text-align:left;
 }
 
@@ -450,7 +450,7 @@ header{
 }
 .aboutus h4 {
 	font-size:16px;
-	color:#5b4c5c;
+	color:#0288D1;
 	padding-bottom:20px;
 }
 .aboutus .btn-primary {
@@ -458,14 +458,14 @@ header{
 	background:none;
 	line-height:30px;
 	font-size:12px;
-	color:#372d38;
+	color:#e4eaea;
 	letter-spacing:2px;
 	text-transform:uppercase;
 	font-weight:600;
 	border-radius: 0;
 }
 .aboutus .btn-primary:hover {
-	border:2px solid #372d38;
+	border:2px solid #0288D1;
 }
 
 /*----------------------------------------------------
@@ -477,7 +477,7 @@ header{
 }
 
 .skillset {
-	background:#f8f8f8;
+	background:#17191b;
 	display:table;
 	width:100%;
 }
@@ -516,7 +516,7 @@ header{
 	line-height:27px;
 	text-transform:uppercase;
 	letter-spacing:2px;
-	color:#5b4c5c;
+	color:#e4eaea;
 }
 
 .skillbar-title span {
@@ -541,7 +541,7 @@ header{
 ------------------------------------------------------*/
 
 .myexperties {
-	background:#fff;
+	background:#0b0c0d;
 }
 .myexperties .container{
 	padding-top:67px ;
@@ -622,11 +622,11 @@ header{
 	width: 70px;
 	height: 70px;
 	margin-left: 0;
-	border: 1px solid #eee;
+	border: 1px solid #0078bf;
 	border-radius: 100%;
 	text-align: center;
 	/*background: #1d1d1d;*/
-	background: #43C0F6;
+	background: #0078bf;
 }
 .timeline>li .timeline-image h4 {
 	margin-top: 20px;
@@ -676,7 +676,7 @@ header{
 	 8. Protfolio Style
 ------------------------------------------------------*/
 .protfolio{
-	background:#f8f8f8;
+	background:#17191b;
 	width:100%;
 	overflow:hidden;
 }
@@ -957,7 +957,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 ------------------------------------------------------*/
 
 .contact{
-	background:#f8f8f8;
+	background:#0b0c0d;
 }
 .contact .container{
 	padding-top:75px;
@@ -978,7 +978,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 
 
 .contactDetails{
-	background:#fff;
+	background:#17191b;
 }
 .contactDetails .container{
 	padding-top:69px ;
@@ -1015,22 +1015,23 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 
 .conForm .submitBnt{
-	background:none;
-	font-family: 'Montserrat', sans-serif;
-	color:#372d38;
-	font-size:12px;
-	letter-spacing:2px;
-	text-transform:uppercase;
-	font-weight:600;
-	text-align:center;
-	margin:0px;
-	border:2px solid #888089 !important;
-	padding:0;
-	width:322px;
-	height:52px;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #e4eaea;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px auto;
+    border: 2px solid #888089 !important;
+    width: 322px;
+    height: 52px;
+    padding: 14px;
+    cursor: pointer;
 }
 .conForm .submitBnt:hover{
-	border:2px solid #372d38 !important;
+	border:2px solid #0288D1 !important;
 }
 
 .textGroup{
@@ -1112,7 +1113,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	 10. Footer Style
 ------------------------------------------------------*/
 #prefooter {
-    background-color: #e5e5e5;
+    background-color: #0b0c0d;
 }
 
 .main_footer {
@@ -1134,10 +1135,10 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 
 #prefooter b {
-	color: #1d1d1d;
+	color: #e4eaea;
 }
 .footer{
-	background:#f8f8f8;
+	background:#0b0c0d;
 }
 .footer .container{
 	padding:84px 0 0;
@@ -1152,7 +1153,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 .footer ul li{
 	display:inline-block;
 	text-align:center;
-	background:#1d1d1d;
+	background:#797979;
 	color:#ffffff;
 	line-height:55px;
 	margin:0 17px 14px;
@@ -1162,8 +1163,19 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	-webkit-border-radius: 50%;
     border-radius: 50%;
 }
-.footer ul li:hover{
-	background:#0288D1;
+.footer ul li :hover i {
+	color:#ffffff;
+}
+
+.footer ul li:hover:nth-child(1){
+	background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.footer ul li:hover:nth-child(2){
+	background:#4267B2;
+}
+.footer ul li:hover:nth-child(3){
+	background:#2867B2;
 }
 .footer ul li:hover	a{
 	color:#fff;
@@ -1176,7 +1188,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 .footer ul li a i{
 	line-height:55px !important;
-	color:#fff;
+	color:#17191b;
 }
 
 .footer p{
@@ -1196,7 +1208,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	border:2px solid #888089;
 }
 .gototop i {
-	color:#1d1d1d;
+	color:#e4eaea;
 	line-height:35px;
 }
 
