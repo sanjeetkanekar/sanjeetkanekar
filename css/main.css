@@ -963,19 +963,14 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	padding-top:75px;
 	padding-bottom:0;
 }
-.mapArea{
-	height:462px;
-	overflow:hidden;
-	width:100%;
-	margin:0;
-	background:#3b323c;
+#gmapcontainer {
+	width: 100%;
+	height: 450px;
 }
-.mapArea iframe{
+#gmapcontainer iframe{
 	width:100%;
 	height:100%;
 }
-#map img { max-width: none; }
-
 
 .contactDetails{
 	background:#17191b;
