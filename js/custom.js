@@ -1,6 +1,13 @@
 (function($) { 
 		  
 $(document).ready(function(){
+
+	$('.navbar-collapse ul li a').click( function () {
+		$('.navbar-header').toggleClass('mobilemenuheader');
+		$('.navbar-collapse').collapse("hide");
+		$('.navbar-collapse').removeClass("show");
+	});
+
 	$('.slide').prepend('<div class="patternOverlay"></div>');	
 	
 	$(window).scroll(function() {
@@ -71,9 +78,10 @@ $(document).ready(function(){
 // for mobile nav js	
 $(window).load(function(){
 	$('button.navbar-toggle').click(function(){
-		$(this).toggleClass('active');
-		$('.navbar-collapse').slideToggle();										 
-	});					
+		$('.navbar-header').toggleClass('mobilemenuheader');
+		$('.navbar-inverse .navbar-toggle').toggleClass('is-active');
+		// $('.navbar-collapse').slideToggle();										 
+	});			
 });
 // for banner height js
 var windowWidth = $(window).width();

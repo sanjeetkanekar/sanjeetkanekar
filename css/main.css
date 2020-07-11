@@ -379,7 +379,7 @@ header{
   color:#fff;
 }
 .isStuck .navbar.navbar-inverse.navbar-static-top a{
-  color:#000;
+  color:#fff;
 }
 .nav-icon {
 	width:42px;
@@ -415,7 +415,7 @@ header{
 	background: transparent;
 }
 .isStuck{
-	background:#fff ;
+	background:#0b0c0d ;
 	
 	-o-transition: all .5s;
     -ms-transition: all .5s;
@@ -423,6 +423,17 @@ header{
     -webkit-transition: all .5s;
     transition: all .5s;
 }
+.navbar-inverse .navbar-toggle {
+    border-color: #2a6496;
+    background-color: #2a6496;
+}
+
+.navbar-inverse .navbar-collapse {
+    border: none;
+}
+
+.navbar-toggle .collapse
+
 /*----------------------------------------------------
 	4. About me Style
 ------------------------------------------------------*/
@@ -1218,7 +1229,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	left:0;
 	right:0;
 	bottom:0;
-	background-color:#fff; /* change if the mask should have another color then white */
+	background-color:#0b0c0d; /* change if the mask should have another color then white */
 	z-index:9999999999; /* makes sure it stays on top */
 }
 
@@ -1270,14 +1281,23 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	}
 	
 	.navbar-inverse .navbar-toggle .icon-bar{
-		background:#000;
+		color: #fff;
+    	line-height: 32px;
+    	font-size: 24px;
+    	font-weight: normal;
 	}
 	.navbar-inverse .navbar-toggle:hover .icon-bar,
 	.navbar-inverse .navbar-toggle.active .icon-bar{
 		background:#fff;
 	}
 	.navbar-inverse .navbar-toggle.active {
-		background-color:#11141c;
+		background-color: #2a6496;
+	}
+	.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    	background-color: #2a6496;
+	}
+	.isStuck {
+		background:transparent;
 	}
 }
 
@@ -1386,8 +1406,32 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	.navbar-header{
 		display:none;
 	}
+	.navArea{
+		display:none;
+	}
 	.isStuck .navbar-header{
 		display:block;
+		/*background: #181a1c;*/
+	}
+	.mobilemenuheader{
+		background: #181a1c;
+	}
+	.mobilemenuheader .navbar-toggle.is-active .icon-bar:nth-child(2){
+  		opacity: 0;
+	}
+
+	.mobilemenuheader .navbar-toggle.is-active .icon-bar:nth-child(1){
+	  -webkit-transform: translateY(4px) rotate(45deg);
+	  -ms-transform: translateY(4px) rotate(45deg);
+	  -o-transform: translateY(4px) rotate(45deg);
+	  transform: translateY(4px) rotate(45deg);
+	}
+
+	.mobilemenuheader .navbar-toggle.is-active .icon-bar:nth-child(3){
+	  -webkit-transform: translateY(-8px) rotate(-45deg);
+	  -ms-transform: translateY(-8px) rotate(-45deg);
+	  -o-transform: translateY(-8px) rotate(-45deg);
+	  transform: translateY(-8px) rotate(-45deg);
 	}
 	.workYear{
 		margin:0 auto;
@@ -1756,3 +1800,5 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
             transform: translateX(0);
   }
 }
+
+
