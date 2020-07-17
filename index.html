@@ -200,8 +200,14 @@
                                                 </div>
                                                 <!-- End Skill Bar -->
                                                 <div class="skillbar clearfix " data-percent="90%">
-                                                    <div class="skillbar-title"><span>Socialize</span></div>
+                                                    <div class="skillbar-title"><span>Public Speaking</span></div>
                                                     <div class="skillbar-bar social"></div>
+                                                    <div class="skill-bar-percent"></div>
+                                                </div>
+                                                <!-- End Skill Bar -->
+                                                <div class="skillbar clearfix " data-percent="95%">
+                                                    <div class="skillbar-title"><span>Social</span></div>
+                                                    <div class="skillbar-bar com"></div>
                                                     <div class="skill-bar-percent"></div>
                                                 </div>
                                                 <!-- End Skill Bar -->                
@@ -405,11 +411,12 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 conForm text-center">
                                             <div id="message"></div>
                                             <form>
-                                                <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" placeholder="Your name" >
-                                                <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 noMarr" placeholder="Your email" >
-                                                <textarea name="comments" id="messageo" cols="" rows="" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" placeholder="Your message"></textarea>
-                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><div class="submitBnt" onclick="sendEmail()">Send message</div>
-                                                <div id="simple-msg"></div>
+                                                <input name="name" id="sendername" type="text" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" placeholder="Your name" >
+                                                <input name="email" id="senderemail" type="email" class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 noMarr" placeholder="Your email" >
+                                                <textarea name="comments" id="sendermessage" cols="" rows="" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" placeholder="Your message"></textarea>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="submitBnt" onclick="sendEmail()">Send message</div>
+                                                </div>
                                             </form>
                                         </div>
                                     </div>
@@ -491,17 +498,19 @@
                        
                         <script type="text/javascript">
                             function sendEmail() {
-                                var message = document.getElementById('messageo').value;
-                                console.log(message);
-                            // Email.send({
-                            //     SecureToken : "f822480b-cf17-4a64-b257-3c226791c5cc",
-                            //     To : 'kanekarsanjeet@gmail.com',
-                            //     From : "you@isp.com",
-                            //     Subject : "Lets connect",
-                            //     Body : "And this is the body"
-                            // }).then(
-                            //   message => alert("Email Send Successfully")
-                            // );
+                                var message = document.getElementById('sendermessage').value;
+                                var email = document.getElementById('senderemail').value;
+                                var subject = document.getElementById('sendername').value+" "+"Commented";
+
+                                Email.send({
+                                    SecureToken : "f822480b-cf17-4a64-b257-3c226791c5cc",
+                                    To : 'kanekarsanjeet@gmail.com',
+                                    From : email,
+                                    Subject : subject,
+                                    Body : message
+                                }).then(
+                                  message => alert("Email Send Successfully")
+                                );
                             }
                         </script>
                         <script src="https://smtpjs.com/v3/smtp.js"></script>
