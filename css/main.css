@@ -728,7 +728,7 @@ header{
 	margin:0 -2px;
 	position:relative;
 }
-.portfolioFilter ul li:after {
+/* .portfolioFilter ul li:after {
 	content:"";
 	display:block;
 	width:1px;
@@ -738,7 +738,7 @@ header{
 	right:0;
 	top:50%;
 	margin-top:-5px;
-}
+} */
 .portfolioFilter ul li.last:after {
 	background:#fff;
 }
@@ -760,15 +760,15 @@ header{
 
 .portfolioFilter ul li a:hover{
 	border-color:#cfcfcf;
-	color:#000;
+	color:#0288D1;
 	
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }
 
 .portfolioFilter ul li a.current{
-	border:solid 1px #f8f8f8;
-	color:#000;
+	border:solid 2px #0288D1;
+	color:#0288D1;
 }
 ul.portfolioContainer{
 	display:block;
@@ -782,7 +782,7 @@ ul.portfolioContainer li{
 	padding:0px;
 	margin:0px;
 	cursor:pointer;
-	border:1px solid #fff;
+	border:1px solid transparent;
 	width:24.8%;
 }
 ul.portfolioContainer li .lightCon{
