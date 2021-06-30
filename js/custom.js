@@ -10,18 +10,30 @@ $(document).ready(function(){
 
 	$('.slide').prepend('<div class="patternOverlay"></div>');	
 	
-	$(window).scroll(function() {
-   		var hT = $('#skillset').offset().top,
-       		hH = $('#skillset').outerHeight(),
-       		wH = $(window).height(),
-       		wS = $(this).scrollTop();
-   				if (wS > (hT+hH-wH)){
-					$('.skillbar').each(function(){
-						$(this).find('.skillbar-bar').animate({
-							width:$(this).attr('data-percent')
-						},6000);
-					});
-   				}
+// 	$(window).scroll(function() {
+// //		if ($(window).scrollTop() <  $("section:nth-of-type(3)").offset().top) {
+// 			console.log("hello");
+// 			var hT = $('#skillset').offset().top,
+//        		hH = $('#skillset').outerHeight(),
+//        		wH = $(window).height(),
+//        		wS = $(this).scrollTop();
+// 			  if(wS > ((hT+hH-wH)-500)){
+// 					$('.test .skillbar').each(function(){
+// 						$(this).find('.skillbar-bar').animate({
+// 							width:$(this).attr('data-percent')
+// 						},6000);
+// 					});
+//    				}
+// 	 //}
+   		
+// 	});
+
+	$('#skillset').waypoint(function() {
+		$('.test .skillbar').each(function(){
+			$(this).find('.skillbar-bar').animate({
+				width:$(this).attr('data-percent')
+			},6000);
+		});
 	});
 	
 	
@@ -59,8 +71,26 @@ $(document).ready(function(){
 		
 		$('#nav-show').fadeIn();
 	});
-	
-	
+
+	$("button").click(function() {
+		var formdata = $("form").serializeArray();       
+		Email.send({  
+			SecureToken :"9ee74703-2197-4fec-86d2-5548d5a58ead",
+			To : "kanekarsanjeet@gmail.com",
+			From : formdata[1].value,
+			Subject : "Email from Guest",
+			Body : formdata[2].value
+		}).then(function(response){ 
+		if (response == 'OK') {              
+			alert("Thanks for yor mail! will reach out to you soon.");
+			document.getElementById("sendername").value = "";
+     		document.getElementById("senderemail").value = "";
+			document.getElementById("sendermessage").value = "";
+		} else {
+			console.log(response);
+		} 
+		});	
+	});
 });	
 
 
@@ -122,17 +152,15 @@ $(window).load(function(){
          return false;
     }); 
 
-
-
-// for portfoli lightbox jquary
-jQuery(function() {
-	var $chosenSheet,
-	$stylesheets = $( "a[id^=theme-]" );
-	
-	// run rlightbox
-	$( ".lb" ).rlightbox();
-	$( ".lb_title-overwritten" ).rlightbox({overwriteTitle: true});
-});
+	// for portfoli lightbox jquary
+	jQuery(function() {
+		var $chosenSheet,
+		$stylesheets = $( "a[id^=theme-]" );
+		
+		// run rlightbox
+		$( ".lb" ).rlightbox();
+		$( ".lb_title-overwritten" ).rlightbox({overwriteTitle: true});
+	});
 });
 
 // Somth page scroll
