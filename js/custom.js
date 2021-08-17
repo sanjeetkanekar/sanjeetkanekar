@@ -73,9 +73,10 @@ $(document).ready(function(){
 	});
 
 	$("button").click(function() {
-		var formdata = $("form").serializeArray();       
+		var formdata = $("form").serializeArray(); 
+		console.log(formdata);      
 		Email.send({  
-			SecureToken :"9ee74703-2197-4fec-86d2-5548d5a58ead",
+			SecureToken:"bc4eaa0a-227a-445d-9eb8-798d7a6e39bb",
 			To : "kanekarsanjeet@gmail.com",
 			From : formdata[1].value,
 			Subject : "Email from Guest",
@@ -151,16 +152,6 @@ $(window).load(function(){
          });
          return false;
     }); 
-
-	// for portfoli lightbox jquary
-	jQuery(function() {
-		var $chosenSheet,
-		$stylesheets = $( "a[id^=theme-]" );
-		
-		// run rlightbox
-		$( ".lb" ).rlightbox();
-		$( ".lb_title-overwritten" ).rlightbox({overwriteTitle: true});
-	});
 });
 
 // Somth page scroll
